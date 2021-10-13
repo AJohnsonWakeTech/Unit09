@@ -48,7 +48,7 @@ YEAR_LENGTH = 12
 # See https://www.ssa.gov/planners/retire/agereduction.html
 #
 def full_retirement_age(birth_year):
-    if birth_year >= CURRENT_YEAR:
+    if birth_year > CURRENT_YEAR:
         return -1, -1
     if birth_year < EARLIEST_YEAR:
         return -1, -1
